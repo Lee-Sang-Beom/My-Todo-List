@@ -1,0 +1,24 @@
+메모장
+
+1) document.getElementById(); 
+   ex) document.getElementById.title.innerText = "string" 
+       > 화면에 표시된 텍스트 변경
+
+       document.getElementById.style.color = "color"
+       > 화면에 표시된 텍스트 색상 변경
+   
+2) document.querySelect(); 
+   - 강추!
+
+3) element.className !== element.classList
+
+
+4) element.classList.contains();
+   element.classList.add()
+   element.classList.remove();
+   element.claassList.toggle();
+
+5) element.addEventListener("click, mouseenter, mouseleave", function)
+
+6) window.addEventListener("resize, copy, offline, online, ...", function)
+
