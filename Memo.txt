@@ -22,3 +22,6 @@
 
 6) window.addEventListener("resize, copy, offline, online, ...", function)
 
+7) localstorage.setItem("key", "value")
+   localStorage.getItem("key");
+   localStorage.removeItem("key");
