@@ -17,4 +17,5 @@ const chosenImage = images[randomNumber];
 const bgImage = document.createElement("img");
 const bodyBackground = document.body.prepend(bgImage);
 
-bgImage.src = `./img/${chosenImage}`;
+
+bgImage.src = `https://lee-sang-beom.github.io/My-Todo-List/img/${chosenImage}`;
