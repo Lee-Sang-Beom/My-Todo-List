@@ -11,10 +11,10 @@ const images = [
     "10.jpg"
 ]
 
-const randomNumber =  Math.floor(Math.random()*images.length);
+const randomNumber = Math.floor(Math.random()*images.length);
 const chosenImage = images[randomNumber];
 
 const bgImage = document.createElement("img");
 const bodyBackground = document.body.prepend(bgImage);
 
-bgImage.src = `../img/${chosenImage}`;
+bgImage.src = `img/${chosenImage}`;
