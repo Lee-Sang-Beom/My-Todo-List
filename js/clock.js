@@ -1,5 +1,6 @@
 const clock = document.querySelector("h1#clock");
 
+// time information collection
 function getClock(){
     const date = new Date();
     const hours = String(date.getHours().toString()).padStart(2,"0");

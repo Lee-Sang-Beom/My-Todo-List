@@ -27,6 +27,7 @@ function paintTodo(newToDoObj){
     const span = document.createElement("span");
     const button = document.createElement("button");
 
+    // When the todo element is described, the del button is printed
     button.classList.add("deleteButton");
     button.innerText = "❌";
     button.addEventListener("click", deleteTodo);
@@ -42,6 +43,7 @@ function paintTodo(newToDoObj){
 function handleTodoSubmit(event){
     event.preventDefault();
 
+    // Add new todo element
     const newTodo = toDoInput.value;
     toDoInput.value = "";
 

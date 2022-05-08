@@ -45,6 +45,8 @@ const quote = document.querySelector("#quotes span#quote");
 const author = document.querySelector("#quotes span#author");
 
 function randomSetQuotes(){
+    
+    // Randomly, take the elements of the qutoes array
     const randomNumber =  Math.floor(Math.random()*quotes.length);
     quote.innerText = quotes[randomNumber].quote;
     author.innerText = quotes[randomNumber].author;

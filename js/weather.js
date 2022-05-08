@@ -8,6 +8,7 @@ function onGEOSuceess(position){
 
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
     fetch(url).then((res)=>{
+        // Get information about the weather from the API
         res.json().then((data)=>{
             const name = data.name;
             const weather = data.weather[0].main;

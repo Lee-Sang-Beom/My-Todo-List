@@ -1,3 +1,5 @@
+
+// img array
 const images = [
     "1.jpg",
     "2.jpg",
@@ -14,6 +16,9 @@ const images = [
 const randomNumber = Math.floor(Math.random()*images.length);
 const chosenImage = images[randomNumber];
 
+// create img tag
 const bgImage = document.createElement("img");
 const bodyBackground = document.body.prepend(bgImage);
+
+// specify the source
 bgImage.src = `img/${chosenImage}`;

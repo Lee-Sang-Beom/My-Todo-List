@@ -21,13 +21,15 @@ function paintGreeting(username){
     const ball = document.querySelector(".ball");
     const body = document.body;
 
+    // main greeing page greeting
     greeting.innerText = `Welcome '${username}'`;
+
+    // remove unnecessary tag
     greeting.classList.remove(HIDDEN_CLASS);
     todoForm.classList.remove(HIDDEN_CLASS);
     quote.classList.remove(HIDDEN_CLASS);
     author.classList.remove(HIDDEN_CLASS);
     body.classList.remove(HIDDEN_CLASS);
-
 
     ball.classList.add(HIDDEN_CLASS);
 
