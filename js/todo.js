@@ -8,6 +8,7 @@ let toDos = [];
 
 
 function saveToDos(){
+    // JSON 객체 -> JSON 문자열 생성
     localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
 }
 
@@ -32,6 +33,11 @@ function paintTodo(newToDoObj){
     button.innerText = "❌";
     button.addEventListener("click", deleteTodo);
 
+    // <li>
+    //     <span></span>
+    //     <button></button>
+    // </li>
+    
     li.id = newToDoObj.id;
     li.appendChild(span);
     li.appendChild(button);
@@ -59,6 +65,8 @@ function handleTodoSubmit(event){
 toDoForm.addEventListener("submit", handleTodoSubmit);
 
 if(savedToDos){
+
+    // JSON 문자열 -> JSON 객체 생성
     const parsedToDos = JSON.parse(savedToDos);
     toDos = parsedToDos;
     parsedToDos.forEach((item) => {

@@ -52,7 +52,8 @@ function randomSetQuotes(){
     author.innerText = quotes[randomNumber].author;
 
     new TypeIt(quote, {
-        speed: 90
+        speed: 90,
+        loop:false,
     })
     .go();
 }
