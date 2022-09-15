@@ -9,6 +9,8 @@ function onLoginSubmit(event){
     event.preventDefault();
     loginForm.classList.add(HIDDEN_CLASS);
     const username = loginInput.value;
+
+    // 로컬 스토리지에 username key, username value 기록
     localStorage.setItem(USERNAME_KEY, username);
     paintGreeting(username);
 }
@@ -36,6 +38,7 @@ function paintGreeting(username){
     document.querySelector("h1#clock").classList.remove(HIDDEN_CLASS);
 }
 
+// 로컬 스토리지에 username key에 대한 value 요청
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 if(savedUsername === null){
