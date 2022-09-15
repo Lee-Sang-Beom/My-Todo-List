@@ -11,4 +11,7 @@ Project - MyTodoList
     4. 시간 정보 제공
     5. 유명한 문장 출력 기능
 
+### - 배운 것들
+	1. 기본적인 HTML, CSS, JavaScript 사용법
+	2. DOM API에 대한 실습과 사용법
 ****
