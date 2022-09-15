@@ -50,6 +50,11 @@ function randomSetQuotes(){
     const randomNumber =  Math.floor(Math.random()*quotes.length);
     quote.innerText = quotes[randomNumber].quote;
     author.innerText = quotes[randomNumber].author;
+
+    new TypeIt(quote, {
+        speed: 90
+    })
+    .go();
 }
 
 randomSetQuotes();
