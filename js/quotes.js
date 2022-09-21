@@ -53,7 +53,7 @@ function randomSetQuotes(){
 
     new TypeIt(quote, {
         speed: 90,
-        loop:false,
+        loop:true,
     })
     .go();
 }
