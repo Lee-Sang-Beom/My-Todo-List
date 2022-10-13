@@ -21,7 +21,7 @@
         </div>
     </form>
 
-
+    <!-- 날씨 표시 -->
     <div id="weather">
         <div id="name">
 
@@ -39,13 +39,22 @@
 
         </div>
     </div>
+    
+    <!-- link 추가 -->
+    <div id="link-icon" class="hidden">
+        <a href="https://www.google.co.kr/">
+            <i class="fa-brands fa-google fa-xl"></i>
+        </a>
+    </div>
 
+    <!-- 시간 표시 -->
     <div>
         <h1 id="clock" class="hidden">00:00:00</h2>
             <h2 id="greeting" class="hidden">
         </h1>
     </div>
 
+    <!-- 입력 양식 및 버튼 -->
     <div>
         <form id="todo-form" class="hidden">
             <div>
@@ -61,12 +70,14 @@
         </ul>
     </div>
 
+    <!-- 화면 하단 quote 정보 표시 -->
     <div id="quotes">
         <span id="quote" class="hidden"></span>
         <span id="author" class="hidden"></span>
     </div>
 
 
+    <script src="https://kit.fontawesome.com/54f9e9c75a.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
     <script src="js/greetings.js"> </script>
     <script src="js/clock.js"> </script>

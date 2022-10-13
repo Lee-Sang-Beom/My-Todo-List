@@ -2,6 +2,7 @@ const loginInput = document.querySelector("#login-form div input");
 const loginButton = document.querySelector("#login-form div button");
 const loginForm = document.querySelector("#login-form");
 
+
 const HIDDEN_CLASS = "hidden";
 const USERNAME_KEY = "username";
 
@@ -20,6 +21,7 @@ function paintGreeting(username){
     const author = document.querySelector("#quotes span#author");
     const greeting = document.querySelector("#greeting");
     const todoForm = document.querySelector("#todo-form");
+    const linkLogo = document.querySelector("#link-icon");
     const ball = document.querySelector(".ball");
     const body = document.body;
 
@@ -29,6 +31,7 @@ function paintGreeting(username){
     // remove unnecessary tag
     greeting.classList.remove(HIDDEN_CLASS);
     todoForm.classList.remove(HIDDEN_CLASS);
+    linkLogo.classList.remove(HIDDEN_CLASS);
     quote.classList.remove(HIDDEN_CLASS);
     author.classList.remove(HIDDEN_CLASS);
     body.classList.remove(HIDDEN_CLASS);

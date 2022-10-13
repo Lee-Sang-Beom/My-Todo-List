@@ -7,6 +7,15 @@ body{
     transition: 1000ms;
 }
 
+div{
+    margin: 1.3rem 12px;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+/* input */
 input{
     width: 400px;
     height: 30px;
@@ -34,6 +43,7 @@ input:focus{
     outline : none;
 }
 
+/* btn */
 button {
     transition: 400ms;
 }
@@ -68,11 +78,12 @@ button:hover{
     background: none;
 }
 
-
+/* hidden */
 .hidden{
     display: none;
 }
 
+/* box */
 div#quotes{
     display: flex;
     flex-direction: column;
@@ -92,6 +103,24 @@ span#author{
     color: azure;
 }
 
+#weather{
+    color : rgb(255, 255, 255);
+    display : flex;
+    font-size: 13px;
+    justify-content : space-between;
+
+}
+
+#link-icon{
+    background-color: aliceblue;
+    padding :0.5rem;
+    border-radius: 50%;
+    
+}
+
+
+
+/* img */
 img {
     position:absolute;
     width:100%;
@@ -104,24 +133,13 @@ img {
     opacity:100%;
 }
 
+/* li */
 li{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     font-size: large;
     color :rgb(255, 255, 255);
     font-size: 15px;
-}
-
-#weather{
-    color : rgb(255, 255, 255);
-    display : flex;
-    font-size: 13px;
-    justify-content : space-between;
-
-}
-
-div{
-    margin: 25px 12px;
 }
 
 .ball{
