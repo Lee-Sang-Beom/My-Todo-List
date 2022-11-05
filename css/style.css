@@ -34,7 +34,7 @@ input{
     border-bottom : 3px solid rgb(255, 255, 255);
     margin-bottom : 10px;
     text-align: center;
-    background: rgb(75, 75, 75, 0.4);
+    background: rgba(41, 41, 41, 0.8);
     border-radius: 10px;
     color: white;
 }
@@ -66,9 +66,9 @@ button:hover{
     height: 40px;
     border:none;
     background-color: white;
-    box-shadow: 1px 2px 2px 1px rgb(75, 75, 75);
+    box-shadow: 1px 2px 2px 1px rgb(71, 71, 71);
     color: black;
-    border-radius: 50%;
+    border-radius: 1rem;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -131,7 +131,7 @@ span#author{
 }
 
 #todo-list{
-    background-color: rgb(39, 39, 39,0.8);
+    background-color: rgb(8, 8, 8, 0.8);
     border-radius: 1rem;
 }
 
@@ -142,6 +142,7 @@ span#author{
 #todo-list > li:first-child{
     padding-top : 0.3rem;
 }
+
 #todo-list > li:last-child{
     padding-bottom : 0.3rem;
 }
