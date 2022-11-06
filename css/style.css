@@ -23,10 +23,17 @@ a{
 }
 
 /* input */
+
+#todo-form{
+    display:flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
 input{
-    width: 400px;
+    width: 450px;
     height: 40px;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border-top: none;
     border-left: none;
@@ -62,21 +69,20 @@ button:hover{
 }
 
 .loginButton, .saveButton{
-    width: 90px;
+    width: 80px;
     height: 40px;
     border:none;
     background-color: white;
     box-shadow: 1px 2px 2px 1px rgb(71, 71, 71);
     color: black;
-    border-radius: 1rem;
+    border-radius: 10px;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .deleteButton {
-    margin: 5px 5px;
     background: none;
-    text-align: center;
+    padding-left : 0.5rem;
     font-weight: 700;
     border: none;
 }
@@ -133,18 +139,15 @@ span#author{
 #todo-list{
     background-color: rgb(8, 8, 8, 0.8);
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #todo-list > li{
-    margin-left : 2rem;
-}
-
-#todo-list > li:first-child{
-    padding-top : 0.3rem;
-}
-
-#todo-list > li:last-child{
-    padding-bottom : 0.3rem;
+    margin : 0.8rem 2rem;
+    display: flex;
+    align-items: center;
 }
 
 
