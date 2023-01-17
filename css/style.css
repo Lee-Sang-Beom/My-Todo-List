@@ -1,243 +1,225 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
-    display : flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    transition: 1000ms;
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 1000ms;
 }
 
-div{
-    margin: 1rem 0px;
+div {
+  margin: 1rem 0px;
 }
 
-a{
-    text-decoration: none;
-    color:black;
+a {
+  text-decoration: none;
+  color: black;
 }
 
 /* input */
 
-#todo-form{
-    display:flex;
-    width: 100%;
-    justify-content: space-around;
+#todo-form {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 
-input{
-    width: 450px;
-    height: 40px;
-    font-size: 0.9rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom : 3px solid rgb(255, 255, 255);
-    margin-bottom : 10px;
-    text-align: center;
-    background: rgba(41, 41, 41, 0.8);
-    border-radius: 10px;
-    color: white;
+input {
+  width: 450px;
+  height: 40px;
+  font-size: 0.9rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  margin-bottom: 10px;
+  text-align: center;
+  background: rgba(41, 41, 41, 0.8);
+  border-radius: 10px;
+  color: white;
 }
 
-
-input::placeholder{
-    color :rgb(255, 255, 255);
-    font-style: italic;
-    font-size: 1rem;
+input::placeholder {
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  font-size: 1rem;
 }
 
-input:focus{
-    outline : none;
+input:focus {
+  outline: none;
 }
 
 /* btn */
 button {
-    transition: 400ms;
-    cursor:pointer;
+  transition: 400ms;
+  cursor: pointer;
 }
 
-button:hover{
-    color : white;
-    background-color: black;
+button:hover {
+  color: white;
+  background-color: black;
 }
 
-.loginButton, .saveButton{
-    width: 80px;
-    height: 40px;
-    border:none;
-    background-color: white;
-    box-shadow: 1px 2px 2px 1px rgb(71, 71, 71);
-    color: black;
-    border-radius: 10px;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.loginButton,
+.saveButton {
+  width: 80px;
+  height: 40px;
+  border: none;
+  background-color: white;
+  box-shadow: 1px 2px 2px 1px rgb(71, 71, 71);
+  color: black;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .deleteButton {
-    background: none;
-    padding-left : 0.5rem;
-    font-weight: 700;
-    border: none;
+  background: none;
+  padding-left: 0.5rem;
+  font-weight: 700;
+  border: none;
 }
 
-.deleteButton:hover{
-    border : none;
-    background: none;
+.deleteButton:hover {
+  border: none;
+  background: none;
 }
 
 /* hidden */
-.hidden{
-    display: none;
+.hidden {
+  display: none;
 }
 
 /* box */
-div#quotes{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+div#quotes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-span#quote{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 22px;
-    color: azure;
+span#quote {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 22px;
+  color: azure;
 }
 
-span#author{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 13px;
-    font-style: italic;
-    color: azure;
+span#author {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  color: azure;
 }
 
-#weather{
-    color : rgb(255, 255, 255);
-    display : flex;
-    width: 100%;
-    font-size: 13px;
-    justify-content : center;
+#weather {
+  color: rgb(255, 255, 255);
+  display: flex;
+  width: 100%;
+  font-size: 13px;
+  justify-content: center;
 }
 
-#weather > div{
-    margin : 0 1rem;
+#weather > div {
+  margin: 0 1rem;
 }
 
-#link-icon{
-    background-color: aliceblue;
-    padding :0.5rem;
-    border-radius: 50%;
-    
+#link-icon {
+  background-color: aliceblue;
+  padding: 0.5rem;
+  border-radius: 50%;
 }
 
-#todo-list{
-    background-color: rgb(8, 8, 8, 0.8);
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+#todo-list {
+  background-color: rgb(8, 8, 8, 0.8);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#todo-list > li{
-    margin : 0.8rem 2rem;
-    display: flex;
-    align-items: center;
+#todo-list > li {
+  margin: 0.8rem 2rem;
+  display: flex;
+  align-items: center;
 }
-
 
 /* img */
 img {
-    background-size: cover;
-    position:absolute;
-    width:100%;
-    height:100%;
-    left: 0px;
-    top: 0px;
-    right:0px;
-    bottom:0px;
-    z-index: -1;
-    opacity:100%;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  opacity: 100%;
 }
 
 /* li */
-li{
-    font-weight: bold;
-    font-size: large;
-    color :rgb(255, 255, 255);
-    font-size: 15px;
+li {
+  font-weight: bold;
+  font-size: large;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
 }
 
-.ball{
-    width: 100px;
-    height: 100px;
-    background-color: white;
-    margin-top: 60px;
-    border-radius: 50%;
-    box-shadow: 
-    0 0 20px 0 white,
-    10px 10px 20px 10px purple,
-    -10px -10px 20px 0 cyan,
+.ball {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  margin-top: 60px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 0 white, 10px 10px 20px 10px purple,
+    -10px -10px 20px 0 cyan, inset 0 0 14px 0 white,
+    inset -40px -30px 60px 0 purple, inset -40px -30px 70px 0 blue,
+    inset -40px -30px 100px 0 cyan, inset -40px -30px 140px 0 powderblue;
 
-    inset  0 0 14px 0 white,
-    inset  -40px -30px 60px 0 purple,
-    inset  -40px -30px 70px 0 blue,
-    inset  -40px -30px 100px 0 cyan,
-    inset  -40px -30px 140px 0 powderblue;
-
-    animation: glow 1s linear infinite alternate;
+  animation: glow 1s linear infinite alternate;
 }
 
-@keyframes glow { 
-    /*
+@keyframes glow {
+  /*
         애니메이션을 만들기위해 키프레임 만듬
         animation-name : 애니메이션의 중간 상태를 지정하기 위한 이름을 정의
                          중간 상태는 @keyframes 규칙을 이용하여 기술합니다.
 
     */
-    
-    
-    from{
-        /*애니메이션이 시작될 때 요소에게 지정할 스타일*/
-        box-shadow: 
-        0 0 20px 0 white,
-        10px 10px 20px 10px purple,
-        -10px -10px 20px 0 cyan,
-    
-        inset  0 0 14px 0 white,
-        inset  -40px -30px 60px 0 purple,
-        inset  -40px -30px 70px 0 blue,
-        inset  -40px -30px 100px 0 cyan,
-        inset  -40px -30px 140px 0 powderblue;
-    }
 
-    to{
-        /*애니메이션이 종료될 때 요소에게 지정할 스타일*/
-        box-shadow: 
-        0 0 20px 0 white,
-        10px 10px 20px 10px brown,
-        -10px -10px 20px 0 greenyellow,
-    
-        inset  0 0 14px 0 white,
-        inset  -40px -30px 60px 0 brown,
-        inset  -40px -30px 70px 0 blue,
-        inset  -40px -30px 100px 0 greenyellow,
-        inset  -40px -30px 140px 0 powderblue;
-    }
+  from {
+    /*애니메이션이 시작될 때 요소에게 지정할 스타일*/
+    box-shadow: 0 0 20px 0 white, 10px 10px 20px 10px purple,
+      -10px -10px 20px 0 cyan, inset 0 0 14px 0 white,
+      inset -40px -30px 60px 0 purple, inset -40px -30px 70px 0 blue,
+      inset -40px -30px 100px 0 cyan, inset -40px -30px 140px 0 powderblue;
+  }
+
+  to {
+    /*애니메이션이 종료될 때 요소에게 지정할 스타일*/
+    box-shadow: 0 0 20px 0 white, 10px 10px 20px 10px brown,
+      -10px -10px 20px 0 greenyellow, inset 0 0 14px 0 white,
+      inset -40px -30px 60px 0 brown, inset -40px -30px 70px 0 blue,
+      inset -40px -30px 100px 0 greenyellow,
+      inset -40px -30px 140px 0 powderblue;
+  }
 }
 
-
-h1,h2{
-    color : white;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align : center;
+h1,
+h2 {
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
 }
 
-h1{
-    font-size: 60px;
+h1 {
+  font-size: 60px;
 }
